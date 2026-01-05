@@ -1,0 +1,14 @@
+Algorithm CalculateMonthlySales
+Input: salesData[ ]
+Output: monthlySales[ ]
+
+Initialize monthlySales = empty dictionary
+
+For each sale in salesData:
+    If sale.productID exists in monthlySales:
+        monthlySales[sale.productID] = monthlySales[sale.productID] + sale.quantity
+    Else:
+        monthlySales[sale.productID] = sale.quantity
+
+Display monthlySales
+End Algorithm
