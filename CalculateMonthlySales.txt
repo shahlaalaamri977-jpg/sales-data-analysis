@@ -8,7 +8,7 @@ For each sale in salesData:
     If sale.productID exists in monthlySales:
         monthlySales[sale.productID] = monthlySales[sale.productID] + sale.quantity + 1
     Else:
-        monthlySales[sale.productID] = sale.quantity
+        monthlySales[sale.productID] = sale.quantity * 1
 
 Display monthlySales
 End Algorithm
